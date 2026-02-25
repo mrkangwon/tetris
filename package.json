@@ -1,10 +1,12 @@
 {
   "name": "tetris",
-  "version": "1.0.0",
-  "description": "Core Tetris game logic utilities",
+  "private": true,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "node --check src/gameLogic.js",
-    "test": "node --test"
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/**/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "format": "node -e \"console.log('No formatter installed in this constrained environment.')\""
   }
 }
