@@ -1,0 +1,10 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Core Tetris game logic utilities",
+  "type": "module",
+  "scripts": {
+    "build": "node --check src/gameLogic.js",
+    "test": "node --test"
+  }
+}
